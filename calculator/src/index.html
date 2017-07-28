@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="app.js" language="JavaScript"></script>
+    <link rel="stylesheet" href="app.css"/>
+    <title>简单计算器</title>
+</head>
+<body>
+<div id="calculator">
+    <div id="calculator-head"><h6>简易计算器</h6></div>
+    <form name="calculator" action="" method="get">
+        <div id="calcu-screen">
+            <label>
+                <input type="text" name="numScreen" class="screen" value="" onfocus="this.blur();"/>
+            </label>
+        </div>
+        <div id="calcu-btn">
+            <ul> <!--配置按钮-->
+                <li onclick="add(7)">7</li>
+                <li onclick="add(8)">8</li>
+                <li onclick="add(9)">9</li>
+                <li class="tool" onclick="del()">←</li>
+                <li class="tool" onclick="clearScreen()">C</li>
+                <li class="tool" onclick="add('sin(')">sin</li>
+                <li class="tool" onclick="add('(')">(</li>
+                <li onclick="add(4)">4</li>
+                <li onclick="add(5)">5</li>
+                <li onclick="add(6)">6</li>
+                <li class="tool" onclick="add('*')">×</li>
+                <li class="tool" onclick="add('/')">÷</li>
+                <li class="tool" onclick="add('cos(')">cos</li>
+                <li class="tool" onclick="add(')')">)</li>
+                <li onclick="add(1)">1</li>
+                <li onclick="add(2)">2</li>
+                <li onclick="add(3)">3</li>
+                <li class="tool" onclick="add('+')">+</li>
+                <li class="tool" onclick="add('-')">-</li>
+                <li class="tool" onclick="add('tan(')">tan</li>
+                <li class="tool" onclick="add('ln(')">ln</li>
+                <li onclick="add(0)">0</li>
+                <li onclick="add('00')">00</li>
+                <li onclick="add('.')">.</li>
+                <li onclick="add('e')">e</li>
+                <li onclick="add('pi')">pi</li>
+                <li class="tool" onclick="add('%')">%</li>
+                <li class="tool" onclick="equal()">=</li>
+            </ul>
+        </div>
+        <div id="calculator-foot">
+            <span id="note"></span>
+        </div>
+    </form>
+</div>
+</body>
+</html>

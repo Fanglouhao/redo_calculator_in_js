@@ -1,0 +1,12 @@
+{
+  "name": "calculator",
+  "version": "0.0.1",
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2",
+    "requirejs": "^2.3.3"
+  },
+  "dependencies": {
+    "moha": "0.0.1"
+  }
+}
